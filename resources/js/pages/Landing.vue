@@ -1,10 +1,10 @@
 <template>
     <Head>
-        <title>АйТиПлюс — Программирование для всех | Обучение программированию для детей 8-17 лет</title>
-        <meta name="description" content="АйТиПлюс — обучение программированию для детей 8-17 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии. Запишитесь на мастер класс!" />
+        <title>АйТиПлюс — Программирование для всех | Обучение программированию для всех от 8 лет</title>
+        <meta name="description" content="АйТиПлюс — обучение программированию для всех от 8 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии. Запишитесь на мастер класс!" />
         <meta name="keywords" content="программирование для детей, обучение программированию, курсы программирования, Python для детей, веб-разработка для школьников, IT курсы для детей, АйТиПлюс" />
         <meta property="og:title" content="АйТиПлюс — Программирование для всех" />
-        <meta property="og:description" content="Обучение программированию для детей 8-17 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии." />
+        <meta property="og:description" content="Обучение программированию для всех от 8 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="/" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -39,6 +39,11 @@
             <CoursesSection />
         </section>
 
+        <!-- Schedule Section -->
+        <section aria-label="Расписание">
+            <ScheduleSection />
+        </section>
+
         <!-- Teachers Section -->
         <section aria-label="Преподаватели">
             <TeachersSection />
@@ -52,11 +57,6 @@
         <!-- Why Programming Section -->
         <section aria-label="Почему программирование">
             <WhyProgrammingSection />
-        </section>
-
-        <!-- Schedule Section -->
-        <section aria-label="Расписание">
-            <ScheduleSection />
         </section>
 
         <!-- Form Section -->
@@ -104,7 +104,7 @@ const structuredData = computed(() => {
         "@type": "EducationalOrganization",
         "name": "АйТиПлюс",
         "alternateName": "IT Plus",
-        "description": "Обучение программированию для детей 8-17 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии.",
+        "description": "Обучение программированию для всех от 8 лет. Онлайн и офлайн занятия, опытные преподаватели, современные технологии.",
         "url": baseUrl || "https://code_school.test",
         "logo": {
             "@type": "ImageObject",
@@ -133,7 +133,7 @@ const structuredData = computed(() => {
         "offers": {
             "@type": "Offer",
             "name": "Курсы программирования для детей",
-            "description": "Обучение программированию для детей 8-17 лет. Онлайн и офлайн форматы.",
+            "description": "Обучение программированию для всех от 8 лет. Онлайн и офлайн форматы.",
             "price": "0",
             "priceCurrency": "RUB",
             "availability": "https://schema.org/InStock"

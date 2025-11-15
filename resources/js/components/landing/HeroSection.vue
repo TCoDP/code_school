@@ -34,7 +34,7 @@
                         <span class="inline-block animate-pulse">легко и интересно!</span>
                     </h1>
                     <p class="text-xl md:text-2xl mb-8 opacity-95">
-                        Онлайн и офлайн-занятия для детей 8–17 лет. Учим создавать сайты, игры и приложения с нуля.
+                        Онлайн и офлайн-занятия для всех от 8 лет. Учим создавать сайты, игры и приложения с нуля.
                     </p>
                     <button
                         class="px-8 py-4 bg-white text-primary-600 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 active:scale-95"

@@ -60,7 +60,7 @@ const visibleCards = ref([false, false, false, false]);
 const features = [
     {
         icon: '⏰',
-        title: '2 занятия в неделю',
+        title: '2 часа в неделю',
         text: 'По 60–90 минут каждое',
     },
     {

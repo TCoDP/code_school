@@ -78,7 +78,7 @@ const visibleSchedules = ref([false, false, false]);
 const infoItems = [
     {
         icon: '📅',
-        title: '2 урока в неделю',
+        title: '2 часа в неделю',
         subtitle: '(по 60–90 мин)',
     },
     {
