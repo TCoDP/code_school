@@ -140,7 +140,7 @@ const isAuthenticated = computed(() => !!page.props.auth?.user);
 const isAdmin = computed(() => page.props.auth?.user?.role === 'admin');
 
 const navLinks = [
-    { href: '#how-it-works', label: 'Почему мы?' },
+    { href: '#why-us', label: 'Почему мы?' },
     { href: '#courses', label: 'Курсы' },
     { href: '#teachers', label: 'Преподаватели' },
     { href: '#reviews', label: 'Отзывы' },
