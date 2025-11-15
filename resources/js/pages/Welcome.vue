@@ -91,14 +91,6 @@ onMounted(() => {
                         >
                             Войти
                         </Link>
-                        <Link
-                            v-if="canRegister"
-                            :href="register()"
-                        >
-                            <Button variant="default" size="sm">
-                                Регистрация
-                            </Button>
-                        </Link>
                     </template>
                 </div>
             </nav>
@@ -123,7 +115,7 @@ onMounted(() => {
                     Обучаем современным технологиям и помогаем найти работу мечты.
                 </p>
                 <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
-                    <Link :href="canRegister ? register() : login()">
+                    <Link :href="login()">
                         <Button size="lg" class="w-full sm:w-auto">
                             Начать обучение
                         </Button>
@@ -222,7 +214,7 @@ onMounted(() => {
                         </div>
                     </div>
                     <div class="mt-12 text-center">
-                        <Link :href="canRegister ? register() : login()">
+                        <Link :href="login()">
                             <Button size="lg">
                                 Присоединиться к нам
                             </Button>
@@ -260,7 +252,7 @@ onMounted(() => {
                             <div class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
                                 6 месяцев
                             </div>
-                            <Link :href="canRegister ? register() : login()">
+                            <Link :href="login()">
                                 <Button class="w-full" variant="default">
                                     Записаться на курс
                                 </Button>
@@ -283,7 +275,7 @@ onMounted(() => {
                             <div class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
                                 5 месяцев
                             </div>
-                            <Link :href="canRegister ? register() : login()">
+                            <Link :href="login()">
                                 <Button class="w-full" variant="default">
                                     Записаться на курс
                                 </Button>
@@ -306,7 +298,7 @@ onMounted(() => {
                             <div class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
                                 7 месяцев
                             </div>
-                            <Link :href="canRegister ? register() : login()">
+                            <Link :href="login()">
                                 <Button class="w-full" variant="default">
                                     Записаться на курс
                                 </Button>
@@ -329,7 +321,7 @@ onMounted(() => {
                             <div class="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
                                 4 месяца
                             </div>
-                            <Link :href="canRegister ? register() : login()">
+                            <Link :href="login()">
                                 <Button class="w-full" variant="default">
                                     Записаться на курс
                                 </Button>
@@ -417,7 +409,7 @@ onMounted(() => {
                         </div>
                     </div>
                     <div class="mt-12 text-center">
-                        <Link :href="canRegister ? register() : login()">
+                        <Link :href="login()">
                             <Button size="lg">
                                 Присоединиться к студентам
                             </Button>
@@ -475,7 +467,7 @@ onMounted(() => {
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <Link :href="canRegister ? register() : login()">
+                            <Link :href="login()">
                                 <Button size="lg" class="w-full">
                                     Начать обучение сейчас
                                 </Button>

@@ -7,7 +7,7 @@
                     <div class="flex items-center gap-2 md:gap-4">
                         <a href="/" class="flex items-center gap-2">
                             <span class="text-2xl md:text-3xl">🧠</span>
-                            <span class="font-mono text-xl md:text-2xl font-bold text-primary-600">Академия-Кода</span>
+                            <span class="font-mono text-xl md:text-2xl font-bold text-primary-600">АйТиПлюс</span>
                         </a>
                         <span class="text-gray-400 hidden md:inline">|</span>
                         <span class="text-gray-700 font-semibold text-sm md:text-base hidden sm:inline">Админ-панель</span>

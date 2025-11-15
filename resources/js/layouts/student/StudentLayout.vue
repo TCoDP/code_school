@@ -7,7 +7,7 @@
                     <div class="flex items-center gap-4">
                         <div class="flex items-center gap-2">
                             <span class="text-3xl">🧠</span>
-                            <span class="font-mono text-2xl font-bold text-primary-600">Академия-Кода</span>
+                            <span class="font-mono text-2xl font-bold text-primary-600">АйТиПлюс</span>
                         </div>
                         <span class="text-gray-400">|</span>
                         <span class="text-gray-700 font-semibold">Личный кабинет</span>
@@ -101,6 +101,7 @@ onMounted(() => {
     // Определяем активную вкладку по URL
     const path = window.location.pathname;
     const sectionMap = {
+        '/student/dashboard': 'courses',
         '/student/courses': 'courses',
         '/student/homeworks': 'homeworks',
         '/student/chat': 'chat',

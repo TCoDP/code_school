@@ -8,7 +8,7 @@
             @click="scrollToForm"
         >
             <span class="text-2xl">📝</span>
-            <span class="hidden sm:inline">Записаться на урок</span>
+            <span class="hidden sm:inline">Записаться на мастер класс</span>
             <span class="sm:hidden">Записаться</span>
         </button>
     </div>

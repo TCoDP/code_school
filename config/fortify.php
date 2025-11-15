@@ -144,7 +144,7 @@ return [
     */
 
     'features' => [
-        Features::registration(),
+        // Features::registration(), // Отключено - регистрация только через админ-панель
         Features::resetPasswords(),
         Features::emailVerification(),
         Features::twoFactorAuthentication([

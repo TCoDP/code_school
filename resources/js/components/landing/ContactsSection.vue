@@ -5,7 +5,7 @@
     >
         <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
-                Контакты «Академии-Кода»
+                Контакты «АйТиПлюс»
             </h2>
 
             <div class="grid md:grid-cols-2 gap-12 mb-12">
@@ -87,7 +87,7 @@ const contacts = [
     {
         icon: '📍',
         label: 'Адрес',
-        value: 'Тагилстроевская, 6В',
+        value: 'г. Нижний Тагил, ул. Тагилстроевская, 6В',
         href: null,
     },
 ];

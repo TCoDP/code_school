@@ -26,7 +26,7 @@ defineProps<{
                     class="flex items-center justify-center gap-2 mb-4 hover:opacity-80 transition-opacity"
                 >
                     <span class="text-4xl">🧠</span>
-                    <span class="font-mono text-3xl font-bold text-primary-600">Академия-Кода</span>
+                        <span class="font-mono text-3xl font-bold text-primary-600">АйТиПлюс</span>
                 </Link>
                 <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{{ title }}</h1>
                 <p class="text-gray-600">{{ description }}</p>

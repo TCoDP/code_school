@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
@@ -7,6 +8,12 @@ use Laravel\Fortify\Features;
 Route::get('/', function () {
     return Inertia::render('Landing');
 })->name('home');
+
+// SEO routes
+Route::get('/sitemap.xml', [App\Http\Controllers\SeoController::class, 'sitemap'])
+    ->name('sitemap');
+Route::get('/robots.txt', [App\Http\Controllers\SeoController::class, 'robots'])
+    ->name('robots');
 
 // Legal pages
 Route::get('/privacy-policy', [App\Http\Controllers\LegalController::class, 'privacyPolicy'])
@@ -25,8 +32,15 @@ Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->name('admin.'
     Route::resource('materials', App\Http\Controllers\Admin\MaterialController::class);
 });
 
-Route::get('dashboard', function () {
-    return Inertia::render('Dashboard');
+Route::get('dashboard', function (Request $request) {
+    $user = $request->user();
+    
+    // Редирект в зависимости от роли
+    if ($user->isAdmin()) {
+        return redirect()->route('admin.dashboard');
+    }
+    
+    return redirect()->route('student.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware(['auth', 'verified'])->prefix('student')->name('student.')->group(function () {

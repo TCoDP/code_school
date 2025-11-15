@@ -7,14 +7,15 @@
             <div class="flex items-center justify-between py-4">
                 <div class="flex items-center gap-2">
                     <span class="text-3xl">🧠</span>
-                    <span class="font-mono text-2xl font-bold text-primary">Академия-Кода</span>
+                    <span class="font-mono text-2xl font-bold text-primary">АйТиПлюс</span>
                 </div>
 
-                <nav class="hidden md:flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-8" aria-label="Основная навигация">
                     <a
                         v-for="link in navLinks"
                         :key="link.href"
                         :href="link.href"
+                        :aria-label="`Перейти к разделу ${link.label}`"
                         class="text-gray-700 font-medium hover:text-primary transition-colors relative group"
                         @click.prevent="scrollTo(link.href)"
                     >
@@ -32,12 +33,6 @@
                             class="px-6 py-2 text-primary font-semibold hover:text-primary-600 transition-colors"
                         >
                             Войти
-                        </a>
-                        <a
-                            href="/register"
-                            class="px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
-                        >
-                            Регистрация
                         </a>
                     </template>
                     <template v-else>
@@ -59,7 +54,7 @@
                         class="px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
                         @click="scrollToForm"
                     >
-                        Записаться на пробный урок
+                        Записаться на мастер класс
                     </button>
                 </div>
 
@@ -104,13 +99,6 @@
                     >
                         Войти
                     </a>
-                    <a
-                        href="/register"
-                        class="block w-full px-6 py-2 text-center bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors"
-                        @click="mobileMenuOpen = false"
-                    >
-                        Регистрация
-                    </a>
                 </template>
                     <template v-else>
                         <a
@@ -133,7 +121,7 @@
                     class="w-full px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors"
                     @click="scrollToForm(); mobileMenuOpen = false"
                 >
-                    Записаться на пробный урок
+                    Записаться на мастер класс
                 </button>
             </div>
         </div>
@@ -152,7 +140,7 @@ const isAuthenticated = computed(() => !!page.props.auth?.user);
 const isAdmin = computed(() => page.props.auth?.user?.role === 'admin');
 
 const navLinks = [
-    { href: '#courses', label: 'Курсы' },
+    { href: '#courses', label: 'Занятия' },
     { href: '#how-it-works', label: 'Как проходит обучение' },
     { href: '#teachers', label: 'Преподаватели' },
     { href: '#reviews', label: 'Отзывы' },
@@ -173,9 +161,11 @@ const scrollToForm = () => {
 const handleScroll = () => {
     if (headerRef.value) {
         if (window.scrollY > 100) {
-            headerRef.value.classList.add('shadow-md');
+            headerRef.value.classList.add('shadow-md', 'bg-white/98');
+            headerRef.value.classList.remove('bg-white/95');
         } else {
-            headerRef.value.classList.remove('shadow-md');
+            headerRef.value.classList.remove('shadow-md', 'bg-white/98');
+            headerRef.value.classList.add('bg-white/95');
         }
     }
 };

@@ -127,7 +127,7 @@
         <div class="border">
             <div class="header">
                 <div class="logo">*</div>
-                <div class="title">Академия-Кода</div>
+                <div class="title">АйТиПлюс</div>
                 <div class="subtitle">Сертификат об окончании курса</div>
             </div>
             

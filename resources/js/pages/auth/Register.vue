@@ -7,8 +7,8 @@ import { Label } from '@/components/ui/label';
 import { Spinner } from '@/components/ui/spinner';
 import AuthBase from '@/layouts/AuthLayout.vue';
 import { login } from '@/routes';
-import { store } from '@/routes/register';
-import { Form, Head } from '@inertiajs/vue3';
+// import { store } from '@/routes/register'; // Регистрация отключена
+import { Form, Head, router } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -18,6 +18,16 @@ import { Form, Head } from '@inertiajs/vue3';
     >
         <Head title="Register" />
 
+        <div class="text-center py-8">
+            <p class="text-gray-600 mb-4">Регистрация отключена. Обратитесь к администратору для создания аккаунта.</p>
+            <TextLink
+                :href="login()"
+                class="text-primary-600 hover:text-primary-700 font-medium"
+            >
+                Вернуться к входу
+            </TextLink>
+        </div>
+        <!-- Форма регистрации отключена
         <Form
             v-bind="store.form()"
             :reset-on-success="['password', 'password_confirmation']"
@@ -108,5 +118,6 @@ import { Form, Head } from '@inertiajs/vue3';
                 >
             </div>
         </Form>
+        -->
     </AuthBase>
 </template>

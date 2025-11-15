@@ -85,7 +85,7 @@ class CertificateController extends Controller
         return response()->json([
             'url' => $shareUrl,
             'title' => "Сертификат: {$certificate->course->name}",
-            'text' => "Я получил сертификат по курсу «{$certificate->course->name}» в Академии-Кода! 🎓",
+            'text' => "Я получил сертификат по курсу «{$certificate->course->name}» в АйТиПлюс! 🎓",
         ]);
     }
     
