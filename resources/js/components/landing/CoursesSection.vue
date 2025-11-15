@@ -49,14 +49,14 @@
                             @click="scrollToForm"
                         >
                             <span class="flex items-center justify-center gap-2">
-                                <span>Записаться на занятие</span>
+                                <span>Записаться на курс</span>
                                 <span class="group-hover:translate-x-1 transition-transform">→</span>
                             </span>
                         </button>
                         <button
                             class="w-full px-6 py-3 border-2 border-primary-500 text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-all transform hover:scale-105 active:scale-95"
                         >
-                            Подробнее о занятии
+                            Подробнее о курсе
                         </button>
                     </div>
                 </div>

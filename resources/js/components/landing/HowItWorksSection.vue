@@ -9,7 +9,7 @@
                 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900"
                 :class="{ 'animate-fade-in-up': isVisible }"
             >
-                Учёба, которую все ждут с нетерпением
+                Почему мы?
             </h2>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">

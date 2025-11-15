@@ -30,12 +30,12 @@
         </section>
 
         <!-- How It Works Section -->
-        <section aria-label="Как проходит обучение">
+        <section aria-label="Почему мы?">
             <HowItWorksSection />
         </section>
 
         <!-- Courses Section -->
-        <section aria-label="Занятия">
+        <section aria-label="Курсы">
             <CoursesSection />
         </section>
 
